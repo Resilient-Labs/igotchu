@@ -1,0 +1,11 @@
+.sl-main{
+  border: 1px solid red;
+  height: 70vh;
+  width: 45vw;
+}
+h1{
+  font-size: 3.5vw;
+}
+p{
+  font-size: 2vw;
+}
