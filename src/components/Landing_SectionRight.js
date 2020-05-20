@@ -6,6 +6,5 @@ export const Landing_SectionRight = () => {
     <section className="sr-main">
       <p>Testing more text out here</p>
     </section>
-
   )
 }
