@@ -34,7 +34,7 @@
   "deprecated": false,
   "description": "Create and parse HTTP Content-Type header",
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "4.19.1",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-node": "5.1.1",
