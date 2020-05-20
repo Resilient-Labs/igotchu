@@ -38,7 +38,7 @@
   "deprecated": false,
   "description": "Encode a URL to a percent-encoded form, excluding already-encoded sequences",
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "4.19.1",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-node": "5.2.1",
