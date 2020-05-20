@@ -1,0 +1,14 @@
+li{
+  list-style-type: none;
+  flex: 1;
+}
+
+ul{
+  display: flex;
+}
+
+a{
+  border: 1px solid #edf1f3;
+  padding: 10px;
+  border-radius: 5px;
+}
