@@ -16,7 +16,7 @@ module.exports = function(app, passport, db) {
             failureFlash : true // allow flash messages
         }));
 
-// (abbey, get user ID)
+        // (abbey, get user ID)
         app.get("/user/:id", function(req, res) {
           let userId = ObjectId(req.params.zebra)
           // the let userID attain the unique userID number in order to get the specfic profile
@@ -26,22 +26,22 @@ module.exports = function(app, passport, db) {
             res.render("sellerPage.ejs", {
               items: result,
               users : req.user,
-        // show you the user is selling
+              // show you the user is selling
             })
           })
         });
 
-// user is login and stores data into the database (Victor)
-app.get('/createItemPage', isLoggedIn, function(req, res) {
-  console.log(req)
-    db.collection('itemPosts').find().toArray((err, result) => {
-      if (err) return console.log(err)
-      res.render('createItemPage', {
-        user : req.user,
-        itemPosts: result
-      })
-    })
-});
+        // user is login and stores data into the database (Victor)
+        app.get('/createItemPage', isLoggedIn, function(req, res) {
+          console.log(req)
+            db.collection('itemPosts').find().toArray((err, result) => {
+              if (err) return console.log(err)
+              res.render('createItemPage', {
+                user : req.user,
+                itemPosts: result
+              })
+            })
+        });
 
   //Create Post (Victor) =========================================================================
   app.post('/postItem', upload.single('file-to-upload'), (req, res, next) => {
@@ -52,6 +52,31 @@ app.get('/createItemPage', isLoggedIn, function(req, res) {
       res.redirect('/createItemPage')
     })
   }
+
+  // PUT for updating Items , ORSON TICKET #25
+  app.put('/updateItem', (req, res) => {
+  var itemId = ObjectId(req.body.itemId.trim());
+  db.collection('itemPosts')
+  // Our idea is that the front end team renders the posts or itemID for every Post so we can update
+  //  How do we find the postId to update it?
+  .findOneAndUpdate({
+    _id: itemID
+  }, {
+    $set: {
+      accepted: "sold"
+    }
+  }, {
+    sort: {
+      _id: -1,
+    },
+    upsert: false
+  }, (err, result) => {
+    if (err) return res.send(err)
+  })
+});
+
+// =========================
+
   // DELETE
   // Orson delete ticket 26
   app.delete('/deletePost', (req, res) => {
