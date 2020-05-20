@@ -52,4 +52,12 @@ app.get('/createItemPage', isLoggedIn, function(req, res) {
       res.redirect('/createItemPage')
     })
   }
+  // DELETE
+  // Orson delete ticket 26
+  app.delete('/deletePost', (req, res) => {
+      db.collection('itemPosts').findOneAndDelete({itemId: req.body.itemId}, (err, result) => {
+        if (err) return res.send(500, err)
+        res.send('Message deleted!')
+      })
+    })
 };
