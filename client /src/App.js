@@ -3,16 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import SingleItem from './singleItem'
 import Layout from './layout'
-import SellerInfo from './sellerInfo.js'
-import IndividualItemImage from './IndividualItemImage.js'
-import IndividualItemTitle from './IndividualItemTitle.js'
-import ItemDescription from './ItemDescription.js'
-import ContactSeller from './ContactSeller.js'
+import SellerInfo from './components/sellerInfo.js'
+import IndividualItemImage from './components/IndividualItemImage.js'
+import IndividualItemTitle from './components/IndividualItemTitle.js'
+import ItemDescription from './components/ItemDescription.js'
+import ContactSeller from './components/ContactSeller.js'
 // Anjelica's imports
-import SectionMain from './SectionMain';
-import Footer from './Footer';
-import Filter from './Filter';
-import UserDetails from './UserDetails'
+import SectionMain from './components/SectionMain';
+import Footer from './components/Footer';
+import Filter from './components/Filter';
+import UserDetails from './components/UserDetails'
 
 class App extends Component {
 state = {
