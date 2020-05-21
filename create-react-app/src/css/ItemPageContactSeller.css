@@ -1,0 +1,21 @@
+.contactSeller{
+    border: 2px solid black;
+    height: 15%;
+  }
+  
+  .contactSeller button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 35%;
+    margin-top: 2%;
+  }
+  

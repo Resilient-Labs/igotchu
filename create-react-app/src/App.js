@@ -4,7 +4,8 @@ import './css/App.css';
 import LandingPage from "./LandingPage"
 // import Layout from "./layout"
 // import SellerInfo from "./sellerInfo"
-// import IndividualItemImage from "./components/IndividualItemImage"
+import IndividualItemImage from "./components/IndividualItemImage"
+import IndividualItemPage from "./IndividualItemPage"
 // import IndividualItemTitle from "./components/IndividualItemTitle"
 // import ItemDescription from "./components/ItemDescription"
 // import ContactSeller from "./components/ContactSeller"
@@ -26,34 +27,51 @@ import {
 function App() {
   return (
 <Router>
-    <div className="App">   
+<div className="App">   
       <Switch>
-        {/* <Route exact path="/ProfilePage">
-            <ProfilePage/>
-        </Route> */}
-        </Switch>
         <Route exact path="/">
-        <LandingPage/>
+          <LandingPage/>
         </Route>
-      {/* <Layout>
-      <div className="individualItemContainer">
-        <div className="leftSideIndividualItemContainer">
-            <Filter/>
-            <SellerInfo />
-            <IndividualItemImage />
-            <ContactSeller />
-            <UserDetails/>
-            <ItemDescription />
-            <SectionMain/>
-            <ItemView/>
+        <Route exact path="/Login">
+          {/* <IndividualItemImage /> */}
+          {/* <LoginPage/> */}
+        </Route>
+        <Route exact path="/SignUp">
+        </Route>
+        <Route exact path="/Newsfeed">
+        </Route>
+        <Route exact path="/ItemPage">
+          <IndividualItemPage/>
+        </Route>
+        <Route exact path="/ProfilePage">
+          {/* <ProfilePage/>
+          <MailToPage/>
+          <FeedSectionMain/>
+          <ItemPageSellerInfo />
+          <ItemPageItemDescription />
+          <ItemView/>
+          <ItemPageContactSeller />
+          <NewsFeedFilter/>
+          <IndividualItemTitle /> */}
+        </Route>
+        <Route exact path="/SellerPage">
+        </Route>
+        <Route exact path="/ItemPage">
+        </Route>
+      </Switch>
+    
+      <div>
+        <div className="individualItemContainer">
+          <div className="leftSideIndividualItemContainer">
+            {/*<SingleItem id="5"/>*/}
+            {/* <UserDetails/> */}
+          </div>
+          <div className="rightSideIndividualItemContainer">
+          </div>
+            {/* <Footer/> */}
+          </div>
         </div>
-        <div className="rightSideIndividualItemContainer">
-            <IndividualItemTitle />
-        </div>
-            <Footer/>
       </div>
-    </Layout> */}
-    </div>
 </Router>
   );
 }
