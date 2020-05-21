@@ -1,10 +1,10 @@
 import React from 'react';
 import './css/App.css';
-// import LoginPage from "./LoginPage";
+import LoginPage from "./LoginPage";
 import LandingPage from "./LandingPage"
 // import Layout from "./layout"
 // import SellerInfo from "./sellerInfo"
-import IndividualItemImage from "./components/IndividualItemImage"
+// import IndividualItemImage from "./components/IndividualItemImage"
 import IndividualItemPage from "./IndividualItemPage"
 // import IndividualItemTitle from "./components/IndividualItemTitle"
 // import ItemDescription from "./components/ItemDescription"
@@ -33,10 +33,7 @@ function App() {
           <LandingPage/>
         </Route>
         <Route exact path="/Login">
-          {/* <IndividualItemImage /> */}
-          {/* <LoginPage/> */}
-        </Route>
-        <Route exact path="/SignUp">
+          <LoginPage/>
         </Route>
         <Route exact path="/Newsfeed">
         </Route>
