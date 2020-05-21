@@ -2,6 +2,7 @@ import React from 'react';
 import './css/App.css';
 import LoginPage from "./LoginPage";
 import LandingPage from "./LandingPage"
+import NavBar from "./components/NavBar"
 // import Layout from "./layout"
 // import SellerInfo from "./sellerInfo"
 // import IndividualItemImage from "./components/IndividualItemImage"
@@ -40,9 +41,11 @@ function App() {
         <Route exact path="/Newsfeed">
         </Route>
         <Route exact path="/ItemPage">
+          <NavBar/ >
           <IndividualItemPage/>
         </Route>
         <Route exact path="/Profile">
+          <NavBar/ >
           <ProfilePage/>
           {/* <MailToPage/>
           <FeedSectionMain/>
@@ -52,10 +55,6 @@ function App() {
           <ItemPageContactSeller />
           <NewsFeedFilter/>
           <IndividualItemTitle /> */}
-        </Route>
-        <Route exact path="/SellerPage">
-        </Route>
-        <Route exact path="/ItemPage">
         </Route>
       </Switch>
     
