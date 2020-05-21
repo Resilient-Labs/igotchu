@@ -1,0 +1,10 @@
+.SectionMain{
+    padding-top: 50px;
+  padding-bottom:30px;
+  width: 100%;
+  background: #edf1f3;
+  height:700px;
+  margin:auto 0;
+  padding-left: 160px;
+  /* padding-right: 80px; */
+}

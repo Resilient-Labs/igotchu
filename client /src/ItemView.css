@@ -1,0 +1,25 @@
+.ItemPost{
+  border-radius: 20%;
+  height: 250px;
+  width: 15%;
+  background-color: #5e6fd3;
+    margin-right: 90px;
+    margin-bottom:50px;
+  float:left;
+}
+
+#ItemImage{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 20% 20%;
+  border-top-right-radius: 20% 20%;
+}
+
+#ItemTitle{
+  text-align: center;
+  color: white;
+}
+
+#ItemTitle h3{
+  margin: 0;
+}
