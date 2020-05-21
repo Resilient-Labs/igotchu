@@ -1,25 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+// import LoginPage from "./LoginPage";
+import LandingPage from "./LandingPage"
+// import Layout from "./layout"
+// import SellerInfo from "./sellerInfo"
+// import IndividualItemImage from "./components/IndividualItemImage"
+// import IndividualItemTitle from "./components/IndividualItemTitle"
+// import ItemDescription from "./components/ItemDescription"
+// import ContactSeller from "./components/ContactSeller"
+// import SectionMain from './SectionMain';
+// import Footer from './components/Footer';
+// import Filter from './components/Filter';
+// import UserDetails from './UserDetails'
+// import ProfilePage from './ProfilePage'
+// import ItemView from './components/ItemView'
+// import {ThemeProvider} from 'styled-components'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link,
+  // HashRouter
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Router>
+    <div className="App">   
+      <Switch>
+        {/* <Route exact path="/ProfilePage">
+            <ProfilePage/>
+        </Route> */}
+        </Switch>
+        <Route exact path="/">
+        <LandingPage/>
+        </Route>
+      {/* <Layout>
+      <div className="individualItemContainer">
+        <div className="leftSideIndividualItemContainer">
+            <Filter/>
+            <SellerInfo />
+            <IndividualItemImage />
+            <ContactSeller />
+            <UserDetails/>
+            <ItemDescription />
+            <SectionMain/>
+            <ItemView/>
+        </div>
+        <div className="rightSideIndividualItemContainer">
+            <IndividualItemTitle />
+        </div>
+            <Footer/>
+      </div>
+    </Layout> */}
     </div>
+</Router>
   );
 }
 
