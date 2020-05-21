@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SingleItem from './singleItem'
+import Layout from './layout'
+import SellerInfo from './sellerInfo.js'
+import IndividualItemImage from './IndividualItemImage.js'
+import IndividualItemTitle from './IndividualItemTitle.js'
+import ItemDescription from './ItemDescription.js'
+import ContactSeller from './ContactSeller.js'
 // Anjelica's imports
 import SectionMain from './SectionMain';
 import Footer from './Footer';
@@ -28,6 +35,25 @@ state = {
     }
     return body;
   };
+
+  function App() {
+  return (
+    <Layout className="App">
+      <div className="individualItemContainer">
+      <div className="leftSideIndividualItemContainer">
+        {/*<SingleItem id="5"/>*/}
+        <SellerInfo />
+        <IndividualItemImage />
+      </div>
+      <div className="rightSideIndividualItemContainer">
+        <IndividualItemTitle />
+        <ItemDescription />
+        <ContactSeller />
+      </div>
+      </div>
+    </Layout>
+  );
+}
 
   render() {
     return (
