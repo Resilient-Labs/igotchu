@@ -13,9 +13,11 @@ import IndividualItemPage from "./IndividualItemPage"
 // import Footer from './components/Footer';
 // import Filter from './components/Filter';
 // import UserDetails from './UserDetails'
-// import ProfilePage from './ProfilePage'
+import ProfilePage from './ProfilePage'
 // import ItemView from './components/ItemView'
-// import {ThemeProvider} from 'styled-components'
+
+import {ThemeProvider} from 'styled-components'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -40,9 +42,9 @@ function App() {
         <Route exact path="/ItemPage">
           <IndividualItemPage/>
         </Route>
-        <Route exact path="/ProfilePage">
-          {/* <ProfilePage/>
-          <MailToPage/>
+        <Route exact path="/Profile">
+          <ProfilePage/>
+          {/* <MailToPage/>
           <FeedSectionMain/>
           <ItemPageSellerInfo />
           <ItemPageItemDescription />
