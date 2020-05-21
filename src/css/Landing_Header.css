@@ -1,9 +1,0 @@
-header {
-  height: 10vh;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-  background: rgba(233, 215, 190, .2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-}

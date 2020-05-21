@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// Anjelica's imports
+import SectionMain from './SectionMain';
+import Footer from './Footer';
+import Filter from './Filter';
+import UserDetails from './UserDetails'
 
 class App extends Component {
 state = {
@@ -33,6 +38,11 @@ state = {
         </header>
         // Render the newly fetched data inside of this.state.data
         <p className="App-intro">{this.state.data}</p>
+        // Inserting Anjelica's Components
+        <UserDetails/>
+        <Filter></Filter>
+        <SectionMain/>
+        <Footer></Footer>
       </div>
     );
   }
