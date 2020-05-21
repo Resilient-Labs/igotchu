@@ -4,6 +4,18 @@ module.exports = function(app, passport, db) {
     app.get('/', function(req, res) {
         res.render('index.ejs');
     });
+
+        // GET - Profile (Aiperi) =================================
+        app.get('/profile', isLoggedIn, function(req, res) {
+        db.collection('users').find().toArray((err, result) => {
+          if (err) return console.log(err)
+          res.render('profile.ejs', {
+            user: req.user,
+            postedItem: result
+          })
+        })
+      });
+
         // SIGNUP =================================
         // show the signup form
         app.get('/signup', function(req, res) {
