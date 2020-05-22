@@ -6,7 +6,7 @@ import LandingPage from "./LandingPage"
 // import Layout from "./layout"
 // import SellerInfo from "./sellerInfo"
 // import IndividualItemImage from "./components/IndividualItemImage"
-import IndividualItemPage from "./IndividualItemPage"
+// import IndividualItemPage from "./IndividualItemPage"
 // import IndividualItemTitle from "./components/IndividualItemTitle"
 // import ItemDescription from "./components/ItemDescription"
 // import ContactSeller from "./components/ContactSeller"
@@ -46,7 +46,6 @@ function App() {
         <Route exact path="/ItemPage">
           {/* <NavBar/ > */}
           <ItemPage />
-          <IndividualItemPage/>
         </Route>
         <Route exact path="/Profile">
           {/* <NavBar/ > */}
