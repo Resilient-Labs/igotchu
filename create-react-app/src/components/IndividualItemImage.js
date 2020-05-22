@@ -5,7 +5,7 @@ import '../css/IndividualItemImage.css';
 function IndividualItemImage(){
   return(
     <div className="individualItemImage">
-        {/* <img src={toiletPaper} alt=""/> */}
+        {/* <img src={} alt=""/> */}
         <span>Price</span>
     </div>
   );

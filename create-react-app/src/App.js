@@ -14,6 +14,8 @@ import IndividualItemPage from "./IndividualItemPage"
 // import Footer from './components/Footer';
 // import Filter from './components/Filter';
 // import UserDetails from './UserDetails'
+import ItemPage from './ItemPage'
+import Newsfeed from './Newsfeed'
 import ProfilePage from './ProfilePage'
 // import ItemView from './components/ItemView'
 
@@ -39,9 +41,11 @@ function App() {
           <LoginPage/>
         </Route>
         <Route exact path="/Newsfeed">
+          <Newsfeed />
         </Route>
         <Route exact path="/ItemPage">
           {/* <NavBar/ > */}
+          <ItemPage />
           <IndividualItemPage/>
         </Route>
         <Route exact path="/Profile">
@@ -61,8 +65,6 @@ function App() {
       <div>
         <div className="individualItemContainer">
           <div className="leftSideIndividualItemContainer">
-            {/*<SingleItem id="5"/>*/}
-            {/* <UserDetails/> */}
           </div>
           <div className="rightSideIndividualItemContainer">
           </div>
