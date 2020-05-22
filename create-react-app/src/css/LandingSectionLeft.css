@@ -1,11 +1,19 @@
 .sl-main{
-    border: 1px solid red;
     height: 70vh;
     width: 45vw;
-  }
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+}
   h1{
     font-size: 3.5vw;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 3vw;
+    font-family: 'Montserrat';
+    margin: 0;
   }
   p{
     font-size: 2vw;

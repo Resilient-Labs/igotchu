@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { useForm } from "react-hook-form";
 
  
-const LoginBtn = styled.button`
-background-color:rgb(94, 111, 211);
-color: white;
-`
+// const LoginBtn = styled.button`
+// background-color:rgb(94, 111, 211);
+// color: white;
+// `
 
 
 function LoginForm() {
@@ -40,11 +40,11 @@ function LoginForm() {
         {errors.exampleRequired && <span>This field is required</span>}
         <br/>
      
-<LoginBtn >
+
         <input type="submit"/>
           
         
-</LoginBtn>
+
         
       </form>
   </div>

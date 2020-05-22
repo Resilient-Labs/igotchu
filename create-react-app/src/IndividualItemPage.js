@@ -12,7 +12,6 @@ function IndividualItemPage() {
   return (
     <div className="individualItemContainer">
         <div className="leftSideIndividualItemContainer">
-            {/*<SingleItem id="5"/>*/}
             <ItemPageSellerInfo />
             <IndividualItemImage />
         </div>

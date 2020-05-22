@@ -2,7 +2,7 @@ import React from 'react';
 import './css/App.css';
 import LoginPage from "./LoginPage";
 import LandingPage from "./LandingPage"
-import NavBar from "./components/NavBar"
+// import NavBar from "./components/NavBar"
 // import Layout from "./layout"
 // import SellerInfo from "./sellerInfo"
 // import IndividualItemImage from "./components/IndividualItemImage"
@@ -17,7 +17,7 @@ import IndividualItemPage from "./IndividualItemPage"
 import ProfilePage from './ProfilePage'
 // import ItemView from './components/ItemView'
 
-import {ThemeProvider} from 'styled-components'
+// import {ThemeProvider} from 'styled-components'
 
 import {
   BrowserRouter as Router,
@@ -41,11 +41,11 @@ function App() {
         <Route exact path="/Newsfeed">
         </Route>
         <Route exact path="/ItemPage">
-          <NavBar/ >
+          {/* <NavBar/ > */}
           <IndividualItemPage/>
         </Route>
         <Route exact path="/Profile">
-          <NavBar/ >
+          {/* <NavBar/ > */}
           <ProfilePage/>
           {/* <MailToPage/>
           <FeedSectionMain/>

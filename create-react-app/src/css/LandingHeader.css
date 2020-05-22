@@ -1,10 +1,25 @@
 header {
     height: 10vh;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.9);
-    background: rgba(233, 215, 190, .2);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+    background: #5e6fd3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    width: 100vw;
   }
   
+  img{
+    height: 8vh;
+    margin-left: 20px;
+
+  }
+  button{
+    background: rgb(37, 52, 123);
+    color: white;
+    font-family: 'Montserrat';
+    border-radius: 60px;
+    padding: 5px 20px;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+
+  }

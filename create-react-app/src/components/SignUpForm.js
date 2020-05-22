@@ -1,11 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import styled from 'styled-components'
-
-const LoginBtn = styled.button`
-background-color:rgb(94, 111, 211);
-color: white;
-`
+// import styled from 'styled-components'
+import '../css/SignUpForm.css'
 
 function SignUpForm() {
     const { register, handleSubmit, watch, errors } = useForm();
@@ -14,8 +10,10 @@ function SignUpForm() {
     console.log(watch("form")); 
   
     return (
-  
+
       <form onSubmit={handleSubmit(onSubmit)}>
+      <h3>Sign Up</h3>
+
       <input name="firstName"  placeholder="First-Name" ref={register({ required: true, maxLength: 20 })} />
 
       <br/>
@@ -37,11 +35,9 @@ function SignUpForm() {
         
         {errors.email && errors.email.message}
         <br/>
-        <LoginBtn >
-        <input type="submit"/>
+        <input className="submitbtn" type="submit"/>
     
         
-</LoginBtn>
         
       </form>
     );

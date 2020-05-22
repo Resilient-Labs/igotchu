@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import { LandingHeader } from './components/LandingHeader'
 import { LandingHero } from './components/LandingHero'
 

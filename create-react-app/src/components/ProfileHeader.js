@@ -1,13 +1,13 @@
 import React from 'react'
-import '../css/LandingHeader.css'
+import '../css/ProfileHeader.css'
 import Logo from "../img/igotchu-darkblue.png";
 
 
-export const LandingHeader = () => {
+export const ProfileHeader = () => {
   return (
     <header>
       <img src={Logo} alt=""/>
-      <button type="button">LOGIN</button>
+      <button type="button">Newsfeed</button>
     </header>
   )
 }

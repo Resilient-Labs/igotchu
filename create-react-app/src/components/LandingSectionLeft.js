@@ -4,8 +4,9 @@ import '../css/LandingSectionLeft.css'
 export const LandingSectionLeft = () => {
   return (
     <section className="sl-main">
-      <h1>Testing some text out here</h1>
-      <p>Testing more text out here</p>
+      <h1>NEED SOMETHING?</h1>
+      <h2>We Gotchu</h2>
+      <p>Community driven platform supporting the neighborhoods we love</p>
     </section>
 
   )
